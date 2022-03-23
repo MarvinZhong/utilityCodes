@@ -1,3 +1,2 @@
-# basiccode
-
-just some basic code for rename, crop, and convert colours
+# Utility Codes
+Just some basic code to assist you in renaming, cropping, converting colours and etc, all at once.
