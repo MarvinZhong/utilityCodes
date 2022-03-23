@@ -9,7 +9,7 @@ def main():
     for count, filename in enumerate(os.listdir(resource)):
         src = resource + '/' + filename
         img = Image.open(src)
-        PIL.ImageOps.invert(img).save("invert"+str(count+1)+".png")
+        PIL.ImageOps.invert(img).save(src)
 
 # Driver Code
 if __name__ == '__main__':
