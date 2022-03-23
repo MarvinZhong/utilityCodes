@@ -8,7 +8,7 @@ def main():
     for count, filename in enumerate(os.listdir(resource)):
         src = resource + '/' + filename
         img = Image.open(src)
-        img.convert('LA').save("convert"+str(count+1)+".png")
+        img.convert('LA').save(src)
 
 # Driver Code
 if __name__ == '__main__':
