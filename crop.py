@@ -9,7 +9,7 @@ def main():
         src = resource + '/' + filename
         img = Image.open(src)
         area = (100, 100, 512, 512) #X start, Y start, X end, Y end 
-        img.crop(area).save("cropped"+str(count+1)+".png")
+        img.crop(area).save(src)
 
 # Driver Code
 if __name__ == '__main__':
