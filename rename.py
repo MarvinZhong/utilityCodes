@@ -7,7 +7,8 @@ codename = "rename_"
 
 def main():
     for count, filename in enumerate(os.listdir(resource)):
-        dst = codename + str(count+1) + ".jpg"
+        oriName, fileExt = os.path.splitext(filename)
+        dst = codename + str(count+1) + fileExt
         src = resource + '/' + filename
         dst = resource + '/' + dst
 
