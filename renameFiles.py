@@ -1,7 +1,7 @@
 import os
 
 # Function to rename multiple files
-resource = 'alldatasets/Class1'
+resource = 'start/folder/with/files/to/rename'
 codename = "rename_"
 
 
