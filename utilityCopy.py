@@ -42,6 +42,7 @@ def main():
     # simpleCopy()
 
     # longer version of simpleCopy()
+    # can't copy empty folder
     duplicateFolder()
 
     # copy all contents to one folder
