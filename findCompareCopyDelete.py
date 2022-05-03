@@ -7,9 +7,9 @@ toCompare = 'B:/Folder/contain/files/to/compare'
 toSave = "C:/Empty/folder/to/save/the/files"
 
 def main():
-    # compare filename of toAction and toCompare
     count = 0
     for filename in os.listdir(toAction):
+        # compare filename of toAction and toCompare
         if filename in os.listdir(toCompare):
             # copy file from toAction to toSave
             shutil.copyfile(os.path.join(toAction, filename), toSave + '/' + filename)
@@ -20,6 +20,10 @@ def main():
             # Print duplicate files and count
             # count += 1
             # print(filename, count)
+            
+        # delete file with json ext
+#         if filename.endswith('.json'):
+#             os.remove(os.path.join(firstDir, filename))
 
 
 
